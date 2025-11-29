@@ -100,4 +100,28 @@ body{
     background-color: var(--accent-color);
     box-shadow: var(--shadow);
   }
+
+  /*========================================
+  Hero Section - Slideshow
+  ======================================*/
+
+  .hero {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+  }
+
+  #slide {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  #slide.aparecer {
+    opacity: 1;
+  }
   
