@@ -1,0 +1,103 @@
+/*================================
+Reset Global Settings
+=================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #3b82f6;
+    --accent-color: #1097b9;
+    --dark-color: #1f2937;
+    --light-gray: #f3f4f6;
+    --medium-gray: #6b7280;
+    --white: #ffffff;
+    --text-dark: #111827;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*========================================
+  Header Navigation
+  ======================================*/
+
+  header{
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 1rem 0;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo h1 {
+    
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0; 
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo img{
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: block;
+  }
+
+  nav a:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+
+  nav a.active{
+    background-color: var(--accent-color);
+    box-shadow: var(--shadow);
+  }
+  

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula Topico 6</title>
+    </head>
+    <body>
+        <h1>Exemplos de comandos de saida em JavaScript</h1>
+        <label for="nome">Informe o Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <button onclick="mostrarNome()">Mostrar Nome no Alert</button>
+        <br>
+        <hr>
+
+        <script type="text/javascript">
+            document.writeln("Ola Mundo!<br>");
+            document.writeln("Este e um exemplo de comandos de saida em JavaScript <br>");
+            
+            function mostrarNome() {
+                // Pega o valor atual do campo de texto
+                const nomeDigitado = document.getElementById('nome').value;
+                
+                // Mostra o alerta com o nome que foi digitado
+                window.alert("O nome escrito foi: " + nomeDigitado);
+            }
+        </script>
+    </body>
+</html>
